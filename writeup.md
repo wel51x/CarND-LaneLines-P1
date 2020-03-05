@@ -23,7 +23,7 @@ Each pipeline has five steps as follows:
   1. convert the images to grayscale
   2. apply Gaussian smoothing
   3. apply Canny Edge Detection with low_threshold = 50, high_threshold = 150
-  4. define the mask poygon
+  4. define the mask poygon for choosing Region of Interest
   5. Run Hough Transform on edge detected image and add the lines to the image via draw_lines()
 
 In order to draw a single line on the left and right lanes, I modify the draw_lines() function by looping through
@@ -52,9 +52,12 @@ output image example (lane lines):
 The challenge video output suggests several problems:
   - shadows create an issue
   - sharp curves can create issues
+  - lane obstructions can create issues
   - lines detected as part of objects such as bridges create issues
+  - random noise creates non-sensical lane lines
 
 ### 3. Suggest possible improvements to your pipeline
 
 A possible improvement would be to parameterize some of the functionality:
   -when trying to determine polygon vertices
+Also see if the horizon can be determined for figuring Region of Interest
