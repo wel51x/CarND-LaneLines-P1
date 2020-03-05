@@ -60,10 +60,8 @@ The challenge video output suggests several problems:
 
 A possible improvement would be to parameterize some of the functionality:
   - when trying to determine polygon vertices
-  - sharp curves can create issues
-  - lane obstructions can create issues
-  - lines detected as part of objects such as bridges create issues
-  - random noise creates non-sensical lane lines
+
+Also see if the horizon can be determined for figuring Region of Interest
 
 A possible improvement would be to parameterize some of the functionality:
   -when trying to determine polygon vertices
