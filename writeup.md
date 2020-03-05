@@ -58,8 +58,8 @@ The challenge video output suggests several problems:
 
 ### 3. Suggest possible improvements to your pipeline
 
-The challenge video output suggests several problems:
-  - shadows create an issue
+A possible improvement would be to parameterize some of the functionality:
+  - when trying to determine polygon vertices
   - sharp curves can create issues
   - lane obstructions can create issues
   - lines detected as part of objects such as bridges create issues
