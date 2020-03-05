@@ -22,9 +22,9 @@ I created three pipelines, with much common functionality
 Each pipeline has five steps as follows:
   1. convert the images to grayscale
   2. apply Gaussian smoothing
-  3. apply Canny with low_threshold = 50, high_threshold = 150
+  3. apply Canny Edge Detection with low_threshold = 50, high_threshold = 150
   4. define the mask poygon
-  5. Run Hough on edge detected image and add the lines to the image
+  5. Run Hough Transform on edge detected image and add the lines to the image via draw_lines()
 
 In order to draw a single line on the left and right lanes, I modify the draw_lines() function by looping through
   the individual line segemnts and:
