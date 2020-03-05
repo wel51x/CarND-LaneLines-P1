@@ -32,6 +32,7 @@ In order to draw a single line on the left and right lanes, I modify the draw_li
   2. save the cooordinates for the segments with the lowest and highest x-values
 Once all segemnts have been processed, I draw the lines by calling cv2.line to join the low and high coordinates
 
+Several examples follow.
 input image example: 
 
 ![alt text][image1]
@@ -45,16 +46,14 @@ output image example (lane lines):
 ![alt text][image3]
 
 
-### 2. Identify potential shortcomings with your current pipeline
+### 2. Potential shortcomings with your current setup
 
-
-One potential shortcoming would be what would happen when ... 
-
-Another shortcoming could be ...
-
+The challenge video output suggests several problems:
+  - shadows create an issue
+  - sharp curves can create issues
+  - lines detected as part of objects such as bridges create issues
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+A possible improvement would be to parameterize some of the functionality
+  -when trying to determine polygon vertices
