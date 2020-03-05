@@ -10,9 +10,7 @@
 
 ---
 
-### Reflection
-
-### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+### Project Description and Reflections
 
 I created three pipelines, with much common functionality
   1. finding_lanes_segments_pipeline creates iamge files containing line segments for each image in test_images
@@ -61,8 +59,4 @@ The challenge video output suggests several problems:
 A possible improvement would be to parameterize some of the functionality:
   - when trying to determine polygon vertices
 
-Also see if the horizon can be determined for figuring Region of Interest
-
-A possible improvement would be to parameterize some of the functionality:
-  -when trying to determine polygon vertices
 Also see if the horizon can be determined for figuring Region of Interest
