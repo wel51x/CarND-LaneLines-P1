@@ -2,7 +2,11 @@
 
 [//]: # (Image References)
 
-[image1]: ./test_images_output/solidWhiteCurve.jpg "Grayscale"
+[image1]: ./test_images/solidWhiteCurve.jpg "Grayscale"
+
+[image2]: ./test_images_output/solidWhiteCurve.jpg "Grayscale"
+
+[image3]: ./test_images_output/lineSolidWhiteCurve.jpg "Grayscale"
 
 ---
 
@@ -28,9 +32,17 @@ In order to draw a single line on the left and right lanes, I modify the draw_li
   2. save the cooordinates for the segments with the lowest and highest x-values
 Once all segemnts have been processed, I draw the lines by calling cv2.line to join the low and high coordinates
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+input image example: 
 
 ![alt text][image1]
+
+output image example (lane segments): 
+
+![alt text][image2]
+
+output image example (lane lines): 
+
+![alt text][image3]
 
 
 ### 2. Identify potential shortcomings with your current pipeline
