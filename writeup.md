@@ -33,6 +33,7 @@ In order to draw a single line on the left and right lanes, I modify the draw_li
 Once all segemnts have been processed, I draw the lines by calling cv2.line to join the low and high coordinates
 
 Several examples follow.
+
 input image example: 
 
 ![alt text][image1]
@@ -55,5 +56,5 @@ The challenge video output suggests several problems:
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to parameterize some of the functionality
+A possible improvement would be to parameterize some of the functionality:
   -when trying to determine polygon vertices
