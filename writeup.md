@@ -10,7 +10,7 @@
 
 ---
 
-### Project Description and Reflections
+### 1. Project Description and Reflections
 
 I created three pipelines, with much common functionality
   1. finding_lanes_segments_pipeline creates iamge files containing line segments for each image in test_images
